@@ -14,21 +14,27 @@ const Profile: NextPage = () => {
 
       <header id="header" className="max-w-[960px] mx-auto py-0 px-[4%] text-center; flex justify-between items-center my-auto">
         <h1 className="w-[120px] leading-none px-0 py-2.5">
-          <a href="index.html">
+          <Link href="index.html">
+          <a>
             <Image src="/img/logo.svg" alt="Profile" width={120} height={40} />
           </a>
+          </Link>
         </h1>
         <nav>
           <ul className="flex px-2.5 py-0">
             <li className="ml-[30px]">
-              <a href="#about" className="text-[#24292e] hover:opacity-70">
+              <Link href="#about">
+              <a className="text-[#24292e] hover:opacity-70">
                 About
               </a>
+              </Link>
             </li>
             <li className="ml-[30px]">
-              <a href="#bicycle" className="text-[#24292e] hover:opacity-70">
+              <Link href="#bicycle">
+              <a className="text-[#24292e] hover:opacity-70">
                 Bicycle
               </a>
+              </Link>
             </li>
           </ul>
         </nav>
@@ -38,8 +44,9 @@ const Profile: NextPage = () => {
         <div id="mainvisual" className="mb-[80px]">
           <Image src="/img/mainvisual.jpg" alt="テキスト" width={1920} height={600} className="object-cover" />
         </div>
-        <section id="about" className="max-w-[960px] mt-0 mx-auto mb-[100px] py-0 px-[4%] text-center;">
-          <h2 className="inline-block text-[2rem] text-center mb-[60px] border-b-solid border-b border-[#383e45]">
+
+        <section id="about" className="max-w-[960px] mt-0 mx-auto mb-[100px] py-0 px-[4%] text-center">
+          <h2 className="inline-block text-[2rem] text-center mb-[60px] border-b-solid border-b border-[#383e45] font-bold">
             About
           </h2>
           <div className="flex justify-center items-center">
@@ -53,7 +60,7 @@ const Profile: NextPage = () => {
             />
             </div>
             <div className="text-left">
-              <h3 className="text-base my-2.5 mx-0">KAKERU MIYAICHI</h3>
+              <h3 className="text-base my-2.5 mx-0 font-bold">KAKERU MIYAICHI</h3>
               <p>
                 テキストテキストテキストテキストテキストテキストテキスト
                 <br />
@@ -64,14 +71,15 @@ const Profile: NextPage = () => {
             </div>
           </div>
         </section>
-        <section id="bicycle" className="max-w-[960px] mt-0 mx-auto mb-[100px] py-0 px-[4%] text-center;">
-          <h2 className="inline-block text-[2rem] text-center mb-[60px] border-b-solid border-b border-[#383e45]">Bicycle</h2>
-          <ul>
+
+        <section id="bicycle" className="max-w-[960px] mt-0 mx-auto mb-[100px] py-0 px-[4%] text-center">
+          <h2 className="inline-block text-[2rem] text-center mb-[60px] border-b-solid border-b border-[#383e45] font-bold">Bicycle</h2>
+          <ul className="flex justify-between">
             {imgs.map((item) => {
               return (
                 <li className="w-[32%]" key={item}>
                   <Image src={item} alt="テキストテキストテキスト" width={640} height={424} />
-                  <h3 className="content-title">タイトルタイトル</h3>
+                  <h3 className="text-base my-2.5 mx-0 font-bold">タイトルタイトル</h3>
                   <p>テキストテキストテキスト</p>
                 </li>
               )
