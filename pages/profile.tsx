@@ -12,7 +12,7 @@ const Profile: NextPage = () => {
         <title>Profile</title>
       </Head>
 
-      <header id="header" className="max-w-[960px] mx-auto py-0 px-[4%] text-center; flex justify-between items-center my-auto">
+      <header id="header" className="max-w-[960px] mx-auto py-0 px-[4%] text-center flex justify-between items-center my-auto">
         <h1 className="w-[120px] leading-none px-0 py-2.5">
           <Link href="index.html">
           <a>
