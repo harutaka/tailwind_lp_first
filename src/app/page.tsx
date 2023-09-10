@@ -1,6 +1,6 @@
 import type { NextPage } from "next"
 import Image from "next/image"
-import Header from "./components/header"
+import Header from "../components/Header"
 
 const Profile: NextPage = () => {
   const imgs = ["/img/bicycle1.jpg", "/img/bicycle2.jpg", "/img/bicycle3.jpg"]
