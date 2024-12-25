@@ -11,7 +11,7 @@ const Profile: NextPage = () => {
 
       <main>
         <div id="mainvisual" className="mb-[80px]">
-          <Image src="/img/mainvisual.jpg" alt="テキスト" width={1920} height={600} className="object-cover" priority={true} />
+          <Image src="/img/mainvisual.jpg" alt="テキスト" width={1920} height={600} className="object-cover h-[600px]" priority={true} />
         </div>
 
         <section id="about" className="max-w-[960px] mt-0 mx-auto mb-[100px] py-0 px-[4%] text-center">
